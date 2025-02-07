@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattarnakarn&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.show-menu img{
+    max-height: 20px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-betweens;
+    background-color: #3b444b;
+}
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+/*Crea la listahorizontal con espacio*/
+li {
+	display:inline-block;
+	float: left;
+	margin-right: 1px;
+}
+
+/* Estilos para los link */
+li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family: 'Gotham';
+    font-weight: bold;
+    font-style: italic;
+	color: whitesmoke;
+	text-decoration: none;
+  transition:all 0.5s ease;
+}
+
+/* estados hover de los link */
+li:hover a {
+	background: #19c589;
+}
+
+/* estilos del dropdown */
+li:hover ul a {
+	background: #f3f3f3;
+	color: white;
+	height: 40px;
+	line-height: 40px;
+}
+
+/* estilos del estado hover del dropdown*/
+li:hover ul a:hover {
+	background: #19c589;
+	color: black;
+}
+
+/*Oculta el dropdown*/
+li ul {
+	display: none;
+}
+
+/* Pone el dropdown en vertical */
+li ul li {
+	display: block;
+	float: none;
+}
+
+/* Previene el texto wrapping */
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/* Estilo de .muestra-menu */
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: black;
+	background: #19c589;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+  transition:all 0.5s ease;
+}
+
+
+/*Oculta el checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/* muestra el menu cuando el checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+
+/* estilos responsive */
+
+@media screen and (max-width : 768px){
+	/*Hace que el dropdown links aparescan en linea */
+	ul {
+		position: static;
+		display: none;
+	}
+	/*Crea espacio vertical */
+	li {
+		margin-bottom: 1px;
+	}
+	/* crea todo el menu links  ancho full */
+	ul li, li a {
+		width: 100%;
+	}
+	/*Display '.muestra-menu' link*/
+	.show-menu {
+		display:block;
+	}
+    header{
+        display: block;
+        text-align: center;
+        position: sticky;
+        top:0;
+    }
+
+}
+body{
+    height: 200vh;
+}
+/**{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+.logo{
+    width: 100%;
+}
+header{
+    background-color: #3b444b;
+    height: auto;
+}
+header > div{
+    background-color: #ffd600;
+    padding: 6px;
+    text-align: center;
+}
+nav{
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    width: 80%;
+    margin-left: 50px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    padding: 27px;
+}
+nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Gotham';
+    font-weight: bold;
+    font-style: italic;
+}*/
