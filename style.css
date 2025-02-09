@@ -17,21 +17,21 @@ header {
 	position: fixed;
 	width: 100%;
 }
-ul {
+header ul {
 	list-style-type:none;
 	margin:0;
 	padding:0;
 }
 
 /*Crea la listahorizontal con espacio*/
-li {
+header li {
 	display:inline-block;
 	float: left;
 	margin-right: 1px;
 }
 
 /* Estilos para los link */
-li a {
+header li a {
 	display:block;
 	min-width:140px;
 	height: 50px;
@@ -46,12 +46,12 @@ li a {
 }
 
 /* estados hover de los link */
-li:hover a {
+header li:hover a {
 	color: #ffd600;
 }
 
 /* estilos del dropdown */
-li:hover ul a {
+header li:hover ul a {
 	background: #f3f3f3;
 	color: white;
 	height: 40px;
@@ -59,24 +59,24 @@ li:hover ul a {
 }
 
 /* estilos del estado hover del dropdown*/
-li:hover ul a:hover {
+header li:hover ul a:hover {
 	background: #ffd600;
 	color: black;
 }
 
 /*Oculta el dropdown*/
-li ul {
+header li ul {
 	display: none;
 }
 
 /* Pone el dropdown en vertical */
-li ul li {
+header li ul li {
 	display: block;
 	float: none;
 }
 
 /* Previene el texto wrapping */
-li ul li a {
+header li ul li a {
 	width: auto;
 	min-width: 100px;
 	padding: 0 20px;
@@ -108,7 +108,7 @@ input[type=checkbox]:checked ~ #menu{
 #banner {
 	background: url(./img/Banner\ img.png);
 	background-size: cover;
-	height: 88vh;
+	height: 90vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -131,8 +131,8 @@ input[type=checkbox]:checked ~ #menu{
 	border-color: #ffd600;
 }
 
-/* SECC: PRESENTACION Y ENTRENAMIENTOS*/
-#pres, #entren {
+/* SECC: PRESENTACION, ENTRENAMIENTOS Y NUTRICIOÓN*/
+#pres, #sec-entren, #sec-nutri {
     background-color: #f6f6f6;
     padding: 40px 10%;
 }
@@ -150,7 +150,7 @@ h2 {
     gap: 40px;
 }
 
-#pres img, #entren img {
+#pres img, #sec-entren img, #sec-nutri img {
     width: 43%;    
     border-radius: 10px;
 	box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
@@ -160,16 +160,54 @@ p {
     line-height: 1.7rem;
 }
 
-/* SECC: OFRECE */
-#ofrece {
+/* SECC: OFRECE Y COACH*/
+#ofrece, #sec-coach {
     background-color: white;
     padding: 40px 10%;
 }
 
-#ofrece img {
+#ofrece img, #sec-coach img{
 	width: 43%;    
     border-radius: 10px;
 	box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* --------- FOOTER --------- */
+footer{
+	background-color: #272727;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 50px;
+}
+.redes{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+.redes img{
+	width: 40px;
+	margin: 20px 8px;
+}
+footer > div:nth-child(2){
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+footer > div:nth-child(1){
+	display: flex;
+}
+footer ul{
+	list-style: none;
+	line-height: 1.7rem;
+}
+footer a{
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.664);
+	font-size: 17px;
+}
+footer h3{
+	font-size: 20px;
+	color: white;
 }
 
 
