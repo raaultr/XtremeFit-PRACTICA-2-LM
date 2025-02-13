@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -13,8 +14,9 @@ header {
     justify-content: space-between;
     background-color: #272727;
 	padding: 15px 10%; /* cosas del header añadidas por mi */
-	border-bottom: 6px solid #ffd600;
-	position: fixed;
+	border-bottom: 2px solid #ffd600;
+	position: sticky;
+	top: 0;
 	width: 100%;
 	z-index: 9999;
 }
@@ -287,11 +289,50 @@ footer h3{
 #premium{
 	background-color: whitesmoke
 }
-#prem-banner img{
-	width: 100%;
-	height: 85vh;
-
+#prem-banner{
+	background: url(./img/premium\ banner.png);
+	background-size: cover;
+	height: 52vh;
 }
+#prem-banner span{
+	color: #ffd600;
+	font-family: 'anton';
+	font-weight: bold;
+	font-style: italic;
+	letter-spacing: 2px;
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	font-size: 5rem;
+	padding-top: 35px; 
+	line-height: 1.2;
+}
+#premium h1{
+	font-family: "Montserrat";
+	color: white;
+	font-size: 4rem;
+}
+#premium h1 span{
+	font-family: "Montserrat";
+	color: #ffd600;
+}
+#difpremium{
+	background: url(./img/fondonegro.jpg);
+	border-top: 1px solid #ffd600;
+	border-bottom: 1px solid #ffd600;
+	text-align: center;
+	padding: 30px;
+}
+#difpremium > div{
+	display: flex;
+	justify-content: center;
+}
+#difpremium > div > div{
+	margin: 40px 7%;
+	background-color: #f3f3f3;	
+}
+
+
 
 
 
