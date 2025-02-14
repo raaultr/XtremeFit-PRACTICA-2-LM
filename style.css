@@ -307,12 +307,12 @@ footer h3{
 	padding-top: 35px; 
 	line-height: 1.2;
 }
-#premium h1{
+h1{
 	font-family: "Montserrat";
 	color: white;
 	font-size: 4rem;
 }
-#premium h1 span{
+h1 span{
 	font-family: "Montserrat";
 	color: #ffd600;
 }
@@ -326,11 +326,64 @@ footer h3{
 #difpremium > div{
 	display: flex;
 	justify-content: center;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
 }
 #difpremium > div > div{
 	margin: 40px 7%;
-	background-color: #f3f3f3;	
+	background-color: white;	
+	border-radius: 15px;	
+	box-shadow: 5px 5px 25px rgba(255, 255, 255, 0.1);
 }
+#difpremium img{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	width: 100%;
+}
+#difpremium p{
+	font-size: 15px;
+	margin: 8px;
+}
+#difpremium  div > div{
+	width: 39%;
+}
+#difpremium h2{
+	margin: 15px;
+}
+#difpremium a{
+	text-decoration: none;
+	font-size: 1.8em;
+    color: #333;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	background-color: #f3f3f3de;
+	padding: 5px 20%;
+	display: inline-block;
+	margin: 25px;
+	border-radius: 6px;
+	transition: transform 0.3s ease;
+}
+#difpremium a:hover{
+	background-color: #ffd500b4;
+	transform: scale(1.1);
+}
+
+/* --------- NUTRICION --------- */
+
+#nutri div:nth-child(1) img{
+	width: 100%;
+}
+#nutri h1{
+	color: #272727;
+}
+
+
+
+
+
+
+
+
 
 
 
