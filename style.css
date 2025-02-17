@@ -278,10 +278,12 @@ footer a{
 	font-size: 12px;
 	font-family: 'Montserrat';
 }
+h3{
+	font-family: 'Montserrat';
+}
 footer h3{
 	font-size: 14px;
 	color: white;
-	font-family: 'Montserrat';
 }
 
 /* --------- PREMIUM --------- */
@@ -342,7 +344,6 @@ h1 span{
 }
 #difpremium p{
 	font-size: 15px;
-	margin: 8px;
 }
 #difpremium  div > div{
 	width: 39%;
@@ -373,12 +374,42 @@ h1 span{
 #nutri div:nth-child(1) img{
 	width: 100%;
 }
-#nutri h1{
-	color: #272727;
+#recetas ul{
+	list-style: none;
+	font-family: 'Montserrat';
+	margin: 0 8px;
+	line-height: 25px;
 }
-
-
-
+#recetas img{
+	width: 55%;
+}
+#recetas{
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+	padding: 30px 20px;
+}
+#recetas > div > p{
+	min-height: 80px;
+}
+#recetas > div{
+	width: 30%;
+}	
+.foto{
+	display: flex;
+	justify-content: center;
+}
+#nutri div:nth-child(2){
+	padding: 25px 5%;
+	text-align: justify;
+}
+#recetas h3{
+	margin-top: 25px;
+}
+.cons{
+	margin-top: 25px;
+	font-size: 16px;
+}
 
 
 
@@ -407,6 +438,7 @@ h1 span{
 	/* crea todo el menu links  ancho full */
 	ul li, li a {
 		width: 100%;
+		background-color: #272727;
 	}
 	/*Display '.muestra-menu' link*/
 	.show-menu {
