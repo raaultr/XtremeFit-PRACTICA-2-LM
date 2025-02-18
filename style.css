@@ -382,6 +382,7 @@ h1 span{
 }
 #recetas img{
 	width: 55%;
+	border-radius: 20px;
 }
 #recetas{
 	display: flex;
@@ -394,6 +395,9 @@ h1 span{
 }
 #recetas > div{
 	width: 30%;
+	background-color: #f6f6f6;
+	border-radius: 20px;
+	padding: 30px;
 }	
 .foto{
 	display: flex;
@@ -406,10 +410,137 @@ h1 span{
 #recetas h3{
 	margin-top: 25px;
 }
-.cons{
-	margin-top: 25px;
-	font-size: 16px;
+#nutri h2{
+	text-align: center;
+	position: relative;
+	padding-bottom: 30px;
 }
+#nutri h2::after{
+	content: "";
+	position: absolute;
+	height: 2px;
+	background-color: #ffd600; 
+	bottom: 20%;
+	left: 35%;
+	width: 30%;
+}
+#nutri p{
+	margin-top: 10px;
+}
+#nutri a{
+	color: #272727;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* --------- INICIAR SESIÓN --------- */
+
+#login{
+	background-color: #272727;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 85vh;
+	color: #272727;
+	flex-direction: column;
+}
+#log footer{
+	border-top: 1px solid #ffd600;
+}
+#login input{
+	display: block;
+	margin: 10px auto;
+	width: 100%;
+	padding: 10px;
+	font-family: 'Montserrat';
+	border:1px solid #272727;
+	border-radius: 6px;
+}
+#login form{
+	margin: auto;
+	padding: 20px;
+}
+.olvidar{
+	text-decoration: none;
+	color: #272727;
+	font-weight: bold;
+	font-size: 12px;
+}
+#login div{
+	background-color: white;
+	width: 30%;	
+	padding: 20px 10px;
+	margin-bottom: 40px;
+	border-radius: 10px;
+}
+#login h1{
+	color: #272727;
+	font-size: 50px;
+	text-align: center;
+}
+.cont{
+	margin-top: 30px;
+}
+#login h3{
+	color: white;
+}
+#login > a{
+	color: white;
+	font-size: 12px;
+	margin-top: 10px;
+}
+.btn-login{
+	cursor: pointer;
+}
+.btn-login:hover{
+	background-color: #ffd600;
+}
+
+/* --------- TIENDA --------- */
+#tienda{
+	background: url(./img/fondonegro.jpg);	
+	color: white;
+}
+#tienda img{
+	width: 45%;
+}
+.prod{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.prod p{
+	font-size: 16px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+article{
+	text-align: center;
+	margin: 15px 0;
+}
+article > span{
+	text-align: start;
+	font-weight: bold;
+}
+.cesta{
+	padding: 7px;
+	border: 2px solid white;
+	border-radius: 10px;
+	margin: 0 0 0 30px;
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+.cesta:hover{
+	background-color: #ffd600;
+	border: 2px solid #272727;
+	border-radius: 10px;
+	color: #272727;
+}
+
+
+
 
 
 
@@ -452,6 +583,7 @@ h1 span{
     }
 
 }
-/*body{
-    height: 200vh;
-}*/
+body{
+	font-family: 'Montserrat';
+    /*height: 200vh;*/
+}
