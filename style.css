@@ -178,11 +178,10 @@ h2 {
 
 #pres h2::after, #sec-entren h2::after, #sec-nutri h2::after{
 	content: "";
-	position: absolute;
+	margin-right: auto;
+	display: block;
 	height: 3px;
 	background-color: #ffd600; 
-	bottom: 0;
-  	left: 0;
 }
 
 #pres h2::after{
@@ -199,11 +198,10 @@ h2 {
 
 #ofrece h2::after, #sec-coach h2::after{
 	content: "";
-	position: absolute;
+	display: block;
+	margin-left: auto;
 	height: 3px;
 	background-color: #ffd600; 
-	bottom: 0;
-  	right: 0;
 }
 
 #ofrece h2::after{
@@ -313,6 +311,8 @@ h1{
 	font-family: "Montserrat";
 	color: white;
 	font-size: 4rem;
+	text-align: center;
+	padding: 20px;
 }
 h1 span{
 	font-family: "Montserrat";
@@ -417,12 +417,12 @@ h1 span{
 }
 #nutri h2::after{
 	content: "";
-	position: absolute;
-	height: 2px;
+	display: block;
+	height: 3px;
 	background-color: #ffd600; 
-	bottom: 20%;
-	left: 35%;
+	margin: auto;
 	width: 30%;
+	margin-top: 8px;
 }
 #nutri p{
 	margin-top: 10px;
@@ -430,7 +430,6 @@ h1 span{
 #nutri a{
 	color: #272727;
 	font-weight: bold;
-	text-decoration: none;
 }
 
 /* --------- INICIAR SESIÓN --------- */
@@ -500,33 +499,43 @@ h1 span{
 #tienda{
 	background: url(./img/fondonegro.jpg);	
 	color: white;
+	padding-bottom: 40px;
 }
 #tienda img{
-	width: 45%;
+	width: 60%;
+	border-radius: 7px;
 }
+#tienda img:hover{
+	transition: transform 0.3s ease, filter 0.3s ease;
+	transform: translateY(-10px); /* Levanta la imagen un poco */
+	filter: brightness(0.6); /* filtro para que se ponga un poco oscura*/
+}  
 .prod{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	margin-top: 5px;
 }
 .prod p{
-	font-size: 16px;
-	margin-bottom: 5px;
+	font-size: 20px;
+	margin-bottom: 10px;
 	font-weight: bold;
 }
 article{
 	text-align: center;
-	margin: 15px 0;
+	margin: 30px 0;
 }
-article > span{
+article a span{
 	text-align: start;
 	font-weight: bold;
+	font-size: 1.2rem;
+	color: #ffd600;
 }
 .cesta{
 	padding: 7px;
 	border: 2px solid white;
 	border-radius: 10px;
-	margin: 0 0 0 30px;
+	margin: 0 0 0 12px;
 	color: white;
 	text-decoration: none;
 	font-size: 14px;
@@ -538,7 +547,33 @@ article > span{
 	border-radius: 10px;
 	color: #272727;
 }
+article a{
+	color: white;
+	text-decoration: none;
+}
+#tienda h1{
+	padding-top: 35px;
+}
 
+/* --------- ENTRENAMIENTOS --------- */ /* ejemplo: https://altafitgymclub.com/rutina-de-gimnasio-para-principiantes/ */
+#entren-inicio{
+	padding: 40px 10%;
+	text-align: justify;
+}
+#entren-inicio h2{
+	text-align: center;
+	padding-bottom: 30px;
+	position: relative;
+}
+#entren-inicio h2::after{
+	content: "";
+	display: block;
+	height: 3px;
+	background-color: #ffd600; 
+	width: 60%;
+	margin: auto;
+	margin-top: 8px;
+}
 
 
 
