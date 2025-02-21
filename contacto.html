@@ -3,16 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
-        <title>XtremeFit - Iniciar Sesión</title>
+        <title>XtremeFit - Contacto</title>
         <link rel="icon" href="./img/icono.png">
         <link rel="stylesheet" href="./style.css">
     </head>
-    <body id="log">
+    <body id="contac">
         <header>
             <div class="logo"><a href="./inicio.html"><img src="./img/Logo_XtremeFit_Sinfondo.png" alt=""></a></div>
             <nav>
                 <label for="show-menu" class="show-menu"><img src="./img/menu.png" alt=""></label>
-                <input type="checkbox" id="show-menu" role="button">
                     <ul id="menu">
                     <li><a href="./entren.html">ENTRENAMIENTOS</a></li>
                     <li>
@@ -25,21 +24,20 @@
             </nav>
         </header>
         <main>
-            <section id="login">
+            <section id="contacto">
                 <div>
-                    <h1>Iniciar sesión</h1>
+                    <h1>Contáctanos</h1>
                     <form action="#" method="get">
                         <label for="correo">Indetificador</label>
                         <input type="text" placeholder="Correo electrónico" name="correo" required> 
-                        <label for="pass" class="cont">Contraseña</label>
-                        <input type="password" placeholder="*********" name="pass" required>
-                        <a href="#" class="olvidar">¿Olvidaste tu contraseña?</a>
-                        <input type="submit" class="btn-login" value="Iniciar Sesión">
+                        <label for="asunto" class="cont">Contraseña</label>
+                        <input type="text" placeholder="Asunto" name="asunto" required>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                        <input type="submit" class="btn-login" value="Enviar">
                     </form>                
-                </div>  
-                <h3>¿Aún no tienes cuenta?</h3>
-                <a href="#">Regístrate ahora</a>     
-            </section>  
+                </div>
+            </section>        
         </main>
         <footer>            
             <ul>

@@ -133,8 +133,7 @@ input[type=checkbox]:checked ~ #menu{
 #banner a:hover {
 	color: #ffd600;
 	background-color: transparent;
-	border-radius: 8%;
-	border-color: #ffd600;
+	border-radius: 3px;
 }
 #banner p{
 	color: white;
@@ -157,7 +156,6 @@ input[type=checkbox]:checked ~ #menu{
     background-color: #f6f6f6;
     padding: 40px 10%;
 }
-
 h2 {
     font-size: 2em;
     color: #333;
@@ -169,13 +167,11 @@ h2 {
 	position: relative;
 	padding-bottom: 10px;
 }
-
 #ofrece h2, #sec-coach h2{
 	text-align: end;
 	position: relative;
 	padding-bottom: 10px;
 }
-
 #pres h2::after, #sec-entren h2::after, #sec-nutri h2::after{
 	content: "";
 	margin-right: auto;
@@ -183,19 +179,15 @@ h2 {
 	height: 3px;
 	background-color: #ffd600; 
 }
-
 #pres h2::after{
 	width: 15%;
 }
-
 #sec-entren h2::after{
 	width: 40%;
 }
-
 #sec-nutri h2::after{
 	width: 7%;
 }
-
 #ofrece h2::after, #sec-coach h2::after{
 	content: "";
 	display: block;
@@ -203,39 +195,32 @@ h2 {
 	height: 3px;
 	background-color: #ffd600; 
 }
-
 #ofrece h2::after{
 	width: 15%;
 }
-
 #sec-coach h2::after{
 	width: 38%;
 }
-
 .container{
     display: flex;
     align-items: center;
     gap: 40px;
 }
-
 #pres img, #sec-entren img, #sec-nutri img {
     width: 32%;    
     border-radius: 10px;
 	box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
 }
-
 p {
     line-height: 2rem;
 	font-size: 1.05rem;
 	font-family: 'Montserrat';
 }
-
 /* SECC: OFRECE Y COACH*/
 #ofrece, #sec-coach {
     background-color: white;
     padding: 40px 10%;
 }
-
 #ofrece img, #sec-coach img{
 	width: 32%;    
     border-radius: 10px;
@@ -432,9 +417,9 @@ h1 span{
 	font-weight: bold;
 }
 
-/* --------- INICIAR SESIÓN --------- */
+/* --------- INICIAR SESIÓN Y CONTACTO--------- */
 
-#login{
+#login, #contacto{
 	background-color: #272727;
 	display: flex;
 	justify-content: center;
@@ -443,10 +428,10 @@ h1 span{
 	color: #272727;
 	flex-direction: column;
 }
-#log footer{
+#log footer, #contac footer{
 	border-top: 1px solid #ffd600;
 }
-#login input{
+#login input, #contac input{
 	display: block;
 	margin: 10px auto;
 	width: 100%;
@@ -455,7 +440,7 @@ h1 span{
 	border:1px solid #272727;
 	border-radius: 6px;
 }
-#login form{
+#login form, #contacto form{
 	margin: auto;
 	padding: 20px;
 }
@@ -465,20 +450,17 @@ h1 span{
 	font-weight: bold;
 	font-size: 12px;
 }
-#login div{
+#login div, #contacto div{
 	background-color: white;
 	width: 30%;	
 	padding: 20px 10px;
 	margin-bottom: 40px;
 	border-radius: 10px;
 }
-#login h1{
+#login h1, #contacto h1{
 	color: #272727;
 	font-size: 50px;
 	text-align: center;
-}
-.cont{
-	margin-top: 30px;
 }
 #login h3{
 	color: white;
@@ -494,6 +476,15 @@ h1 span{
 .btn-login:hover{
 	background-color: #ffd600;
 }
+textarea{
+	border: 1px solid black;
+	border-radius: 6px;
+	font-family: "Montserrat";
+	padding: 10px;
+	margin: 10px auto;
+	width: 100%;
+}
+
 
 /* --------- TIENDA --------- */
 #tienda{
@@ -555,17 +546,17 @@ article a{
 	padding-top: 35px;
 }
 
-/* --------- ENTRENAMIENTOS --------- */ /* ejemplo: https://altafitgymclub.com/rutina-de-gimnasio-para-principiantes/ */
-#entren-inicio{
+/* --------- ENTRENAMIENTOS --------- */
+#entrenamts{
 	padding: 40px 10%;
 	text-align: justify;
 }
-#entren-inicio h2{
+#entrenamts h2{
 	text-align: center;
 	padding-bottom: 30px;
 	position: relative;
 }
-#entren-inicio h2::after{
+#entrenamts h2::after{
 	content: "";
 	display: block;
 	height: 3px;
@@ -574,18 +565,46 @@ article a{
 	margin: auto;
 	margin-top: 8px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+#entren-inicio div{
+	display: flex;
+	justify-content: center;
+	margin: 35px;
+}
+#entren-inicio img{
+	width: 50%;
+	border-radius: 5px;
+}
+#rutinas h2::after{
+	width: 40%;
+}
+#rutinas h2{
+	margin-top: 40px;
+}
+#rutinas div{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 35px;
+}
+table{
+	width: 60%;
+    border-collapse: collapse;
+	padding: 40px;
+}
+td{
+	padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+	font-weight: bold;	
+	font-size: 1.2rem;
+	color: #3f2a56;
+}
+table a{
+	text-decoration: none;
+	color: #3f2a56;
+}
+.princ{
+	margin-top: 25px;
+}
 
 
 
@@ -618,6 +637,23 @@ article a{
     }
 
 }
+@media screen and (max-width : 500px){
+	.container{
+		flex-direction: column;
+	}
+	#pres img{
+		width: 100%;
+	}
+	#pres h2::after{
+		width: 58%;
+	}
+}
+
+
+
+
+
+
 body{
 	font-family: 'Montserrat';
     /*height: 200vh;*/
