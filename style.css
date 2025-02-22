@@ -180,13 +180,13 @@ h2 {
 	background-color: #ffd600; 
 }
 #pres h2::after{
-	width: 15%;
+	width: 19%;
 }
 #sec-entren h2::after{
-	width: 40%;
+	width: 52%;
 }
 #sec-nutri h2::after{
-	width: 7%;
+	width: 10%;
 }
 #ofrece h2::after, #sec-coach h2::after{
 	content: "";
@@ -196,10 +196,10 @@ h2 {
 	background-color: #ffd600; 
 }
 #ofrece h2::after{
-	width: 15%;
+	width: 20%;
 }
 #sec-coach h2::after{
-	width: 38%;
+	width: 50%;
 }
 .container{
     display: flex;
@@ -289,7 +289,7 @@ footer h3{
 	display: flex;
 	justify-content: center;
 	font-size: 5rem;
-	padding-top: 35px; 
+	padding-top: 15px; 
 	line-height: 1.2;
 }
 h1{
@@ -610,6 +610,13 @@ table a{
 
 /* estilos responsive */
 
+@media screen and (min-width : 768px){
+	footer ul {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
 @media screen and (max-width : 992px){
 	/*Hace que el dropdown links aparescan en linea */
 	ul {
@@ -635,19 +642,44 @@ table a{
         top:0;
 		padding: 0;
     }
-
-}
-@media screen and (max-width : 500px){
-	.container{
-		flex-direction: column;
+	#recetas ul li {
+		/* NO SE VE EL TEXTO NOSE PQ*/
 	}
-	#pres img{
+	
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;		
+    }
+    #pres img, #sec-coach img, #sec-nutri img, #ofrece img, #sec-entren img {
+        width: 80%;
+    }
+	#entren-inicio img {
 		width: 100%;
 	}
-	#pres h2::after{
-		width: 58%;
+	#recetas > div {
+		width: 100%;
+		margin: 10px 0;	
+	}	
+	#recetas {
+		flex-wrap: wrap;
+		padding: 30px 8%;
 	}
+	#recetas img {
+		width: 35%;
+	}
+	#difpremium div{
+		flex-wrap: wrap;
+	}	
+	#difpremium div div{
+		width: 100%;
+	}	
 }
+
+
+
+
 
 
 
