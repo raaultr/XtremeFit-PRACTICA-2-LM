@@ -610,7 +610,11 @@ table a{
 
 /* estilos responsive */
 
-
+@media (min-width : 768px) and (max-width : 1271px) {
+	#tienda article{
+		width: 50%;
+	}
+}
 
 @media screen and (max-width : 992px){
 	/*Hace que el dropdown links aparescan en linea */
