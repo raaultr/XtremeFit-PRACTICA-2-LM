@@ -610,12 +610,7 @@ table a{
 
 /* estilos responsive */
 
-@media screen and (min-width : 768px){
-	footer ul {
-		display: flex;
-		flex-direction: column;
-	}
-}
+
 
 @media screen and (max-width : 992px){
 	/*Hace que el dropdown links aparescan en linea */
@@ -646,6 +641,7 @@ table a{
 		/* NO SE VE EL TEXTO NOSE PQ*/
 	}
 	
+	
 }
 
 @media screen and (max-width: 1024px) {
@@ -674,7 +670,18 @@ table a{
 	}	
 	#difpremium div div{
 		width: 100%;
-	}	
+	}		
+	#prem-banner span{
+		font-size: 70px;
+		margin-left: 70px;		
+	}
+	
+}
+@media screen and (max-width : 1200) {
+	#login div, #contacto div{
+		width: 50%;
+	}
+
 }
 
 
