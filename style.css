@@ -180,13 +180,13 @@ h2 {
 	background-color: #ffd600; 
 }
 #pres h2::after{
-	width: 19%;
+	width: 16%;
 }
 #sec-entren h2::after{
-	width: 52%;
+	width: 45%;
 }
 #sec-nutri h2::after{
-	width: 10%;
+	width: 8%;
 }
 #ofrece h2::after, #sec-coach h2::after{
 	content: "";
@@ -196,10 +196,10 @@ h2 {
 	background-color: #ffd600; 
 }
 #ofrece h2::after{
-	width: 20%;
+	width: 16%;
 }
 #sec-coach h2::after{
-	width: 50%;
+	width: 42%;
 }
 .container{
     display: flex;
@@ -452,7 +452,7 @@ h1 span{
 }
 #login div, #contacto div{
 	background-color: white;
-	width: 30%;	
+	width: 35%;	
 	padding: 20px 10px;
 	margin-bottom: 40px;
 	border-radius: 10px;
@@ -504,7 +504,7 @@ textarea{
 .prod{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	margin-top: 5px;
 }
 .prod p{
@@ -515,6 +515,7 @@ textarea{
 article{
 	text-align: center;
 	margin: 30px 0;
+	width: 26%;
 }
 article a span{
 	text-align: start;
@@ -610,42 +611,14 @@ table a{
 
 /* estilos responsive */
 
-@media (min-width : 768px) and (max-width : 1271px) {
-	#tienda article{
-		width: 50%;
-	}
-}
 
-@media screen and (max-width : 992px){
-	/*Hace que el dropdown links aparescan en linea */
-	ul {
-		position: static;
-		display: none;
-	}
-	/*Crea espacio vertical */
-	li {
-		margin-bottom: 1px;
-	}
-	/* crea todo el menu links  ancho full */
-	ul li, li a {
-		width: 100%;
-		background-color: #272727;
-	}
-	/*Display '.muestra-menu' link*/
-	.show-menu {
-		display:block;
-	}
-    header{
-        display: block;
-        text-align: center;
-        top:0;
-		padding: 0;
-    }
-	#recetas ul li {
-		/* NO SE VE EL TEXTO NOSE PQ*/
-	}
-	
-	
+@media screen and (max-width: 1200px){
+	#login div{
+		width: 50%;
+	}	
+	#contacto div{
+		width: 60%;
+	}	
 }
 
 @media screen and (max-width: 1024px) {
@@ -678,15 +651,64 @@ table a{
 	#prem-banner span{
 		font-size: 70px;
 		margin-left: 70px;		
+	}	
+	
+}
+
+@media screen and (max-width : 992px){
+	/*Hace que el dropdown links aparescan en linea */
+	header ul {
+		position: static;
+		display: none;
+	}
+	/*Crea espacio vertical */
+	li {
+		margin-bottom: 1px;
+	}
+	/* crea todo el menu links  ancho full */
+	header ul li, header li a {
+		width: 100%;
+		background-color: #272727;
+	}
+	/*Display '.muestra-menu' link*/
+	.show-menu {
+		display:block;
+	}
+    header{
+        display: block;
+        text-align: center;
+        top:0;
+		padding: 0;
+    }	
+	#tienda article{
+		width: 50%;
+	}
+	#contacto div{
+		width: 80%;
+	}	
+}
+
+@media screen and (max-width : 768px){	
+	footer{
+		flex-direction: column;
+		text-align: center;		
+	}
+	footer > div{
+		margin-top: 30px;
 	}
 	
 }
-@media screen and (max-width : 1200) {
-	#login div, #contacto div{
-		width: 50%;
-	}
 
+@media screen and (max-width: 690px){
+	#tienda article{
+		width: 100%;
+	}
+	
 }
+
+
+
+
 
 
 
